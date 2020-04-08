@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5e8356d55e6ec14e63727162"},"nom":"Angelina","prenom":"Jolie"}
+{"_id":{"$oid":"5e8358af5e6ec14e63727163"},"nom":"Macron","prenom":"Emmanuel"}
+{"_id":{"$oid":"5e835a2bc7870f34c3495252"},"nom":"Field","prenom":"Michel"}
+{"_id":{"$oid":"5e85a30851c59f27471c35c3"},"nom":"Armand","prenom":"Louis"}
+{"_id":{"$oid":"5e85a7150e654d145f180c92"},"nom":"Laroque","prenom":"Michelle"}
