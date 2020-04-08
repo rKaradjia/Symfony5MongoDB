@@ -1,0 +1,79 @@
+{# empty Twig template #}
+
+{#  ->add('nom', TextType::class)
+            ->add('prenom', TextType::class)
+            ->add('adresse', TextType::class)
+            ->add('codepostal', TextType::class)
+                ->add('ville', TextType::class)
+                ->add('nbpersonnes', IntegerType::class)
+                ->add('dureelocation', IntegerType::class)
+                ->add('datecourrier', IntegerType::class)
+                ->add('accompte', NumberType::class)
+                ->add('num_emplacement', IntegerType::class)
+            ->add('save', SubmitType::class, ['label' => 'Create Task'])
+        #}
+
+<b>En cas de mise a jour :
+Saisir correctement le nom.</b>
+
+
+{#
+CSRF A IMPLEMENTER --> activer framework test framework.yaml  #}
+{# {{ form_start(form, {'action': path('testformbdd'), 'method': 'PUT'}) }} #}
+
+{{ form_start(form, {'action': path('routesubmitsuccess'), 'method': 'POST'}) }} 
+
+
+Nom {{form_widget(form.user.nom)}}
+Prenom {{form_widget(form.user.prenom)}}
+
+   
+
+{{form_widget(form.save)}}
+{{form_widget(form.update)}}
+{{form_widget(form.delete)}}
+
+    
+{#
+{{ form_widget(form._token) }}
+#}
+{{ form_end(form) }}
+
+
+<style>
+    
+    
+    table
+{
+    border-collapse: collapse;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+}
+
+
+
+</style>
+
+Le tableau
+<table>
+<tr>
+    
+<th>Nom</th>
+<th>Prenom</th>
+
+</tr>
+</br>
+
+{% for one in tab %}
+<tr>
+    <td> {{ one.nom }}</td>
+    <td>{{ one.prenom }}</td>
+</tr>
+{% endfor %}
+
+
+
+</table>
+
