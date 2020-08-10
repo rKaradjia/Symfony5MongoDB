@@ -1,2 +1,2 @@
 # Symfony5MongoDB
-Application de la documentation au travers un exemple
+Application de la documentation de Symfony (v5) pour MongoDB au travers un exemple
